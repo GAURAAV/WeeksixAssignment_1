@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    tools:context=".fragments.AddStudent_Fragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="Student Details" />
+
+    <ScrollView android:layout_marginTop="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/etFullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:hint="Full Name"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/etImageURL"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:ems="15"
+                android:layout_marginTop="10dp"
+                android:hint="Image URL"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/etAge"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Age"
+                android:inputType="number"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_marginBottom="10dp"
+                android:text="Select Gender"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/rdGroup">
+                <RadioButton
+                    android:id="@+id/rbMale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="20dp"/>
+                <RadioButton
+                    android:id="@+id/rbFemale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textSize="20dp"/>
+                <RadioButton
+                    android:id="@+id/rbOthers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Others"
+                    android:textSize="20dp"/>
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:hint="Address"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_marginTop="20dp"
+                android:layout_width="334dp"
+                android:layout_height="64dp"
+                android:background="@drawable/make_button_rounder"
+                android:textSize="20dp"
+                android:text="Save" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

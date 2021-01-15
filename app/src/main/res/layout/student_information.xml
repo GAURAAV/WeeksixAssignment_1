@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:layout_margin="10dp"
+    android:layout_marginBottom="20dp"
+    android:background="#949494"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgPROFILE"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/user"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNAME"
+        android:layout_width="130dp"
+        android:layout_height="29dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Actor Name"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/imgPROFILE"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAGE"
+        android:layout_width="62dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Age"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/imgPROFILE"
+        app:layout_constraintTop_toBottomOf="@+id/tvNAME" />
+
+    <TextView
+        android:id="@+id/tvADDRESS"
+        android:layout_width="194dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Address"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/imgPROFILE"
+        app:layout_constraintTop_toBottomOf="@+id/tvAGE" />
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="24dp"
+        android:text="Gender"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imgPROFILE"
+        app:layout_constraintTop_toBottomOf="@+id/tvADDRESS" />
+
+    <ImageView
+        android:id="@+id/imgDELETE"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.997"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        android:src="@drawable/ic_baseline_delete_24"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

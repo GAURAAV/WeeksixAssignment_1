@@ -18,7 +18,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         etUSERNAME = findViewById(R.id.USERNAME)
         etPASSWORD = findViewById(R.id.PASSWORD)
-        btnLOGIN = findViewById(R.id.LOGIN)
+        btnLOGIN = findViewById(R.id.SUBMIT)
+
 
         btnLOGIN.setOnClickListener {
             if(validateInput()) {
@@ -26,11 +27,11 @@ class MainActivity : AppCompatActivity() {
                 val password = etPASSWORD.getText().toString()
                 if (username == "softwarica" && password == "coventry") {
                     Toast.makeText(
-                            this@MainActivity,
-                            "User Succesfully Logged in",
-                            Toast.LENGTH_SHORT
+                        this@MainActivity,
+                        "User Succesfully Logged in",
+                        Toast.LENGTH_SHORT
                     ).show()
-                    val intent = Intent(this, HomeActivity::class.java)
+                    val intent = Intent(this, Home_Activity::class.java)
                     startActivity(intent)
                 } else {
                     etUSERNAME.setText("");
@@ -44,7 +45,7 @@ class MainActivity : AppCompatActivity() {
     private fun validateInput(): Boolean {
         var result : Boolean = true
         when {
-            TextUtils.isEmpty(etPASSWORD.text) -> {
+            TextUtils.isEmpty(etUSERNAME.text) -> {
                 etUSERNAME.error = "This field should not be empty"
                 etUSERNAME.requestFocus()
                 result = false
